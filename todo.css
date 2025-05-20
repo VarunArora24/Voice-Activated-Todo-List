@@ -1,0 +1,103 @@
+html{
+    height: 100%;
+}
+body{
+    background-image: linear-gradient(to bottom right, rgb(93, 101, 255), rgb(38, 1, 64));
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+.todo_container{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 10cm;
+    margin: auto;
+    height:10cm;
+    border-radius: 0.45cm;
+    padding: 25px;
+    
+}
+#mic_button{
+    position: absolute;
+    background: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-left:-1cm;
+    margin-top: 0.74cm;
+    
+}
+.title_todo{
+    font-size: 0.60cm;
+
+}
+.container_for_task_input{
+    padding: 10px;
+}
+.write_text{
+    border: none;
+    outline: none;
+    width: 7cm;
+    height: 1cm;
+    border-radius: 1cm;
+    background-color: rgb(232, 223, 223);
+    padding-left: 11px;
+    
+}
+.add_text{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 0.5cm;
+    margin-top: 0.5cm;
+    width: 2cm;
+    height: 1cm;
+}
+.new_task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.text_span{
+    text-align: left;
+}
+.tick{
+    width: 20px;
+  height: 20px;
+  border: 2px solid #555;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.done .tick::after {
+  content: '✓';
+  color: rgb(114, 32, 32);
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  font-weight: bold;
+}
+.cross{
+    background-color: rgb(0, 21, 255);
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 0.5cm;
+    /* margin: auto; */
+    width: 1cm;
+    height: 1cm;
+}
+.task_container{
+    padding-left: 4.5px;
+}
